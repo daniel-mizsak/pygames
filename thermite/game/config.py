@@ -1,0 +1,35 @@
+### WINDOW ###
+GAME_TITLE = "Thermite NoPixel"
+
+SCREEN_WIDTH = 400
+SCREEN_HEIGHT = int(SCREEN_WIDTH * 1.2)
+WINDOW_POS_LEFT = 200
+WINDOW_POS_TOP = 200
+
+### BOARD ###
+TILE_NUM = 8
+BOARD_DIMENSION = 6
+TILE_SIZE = int(SCREEN_WIDTH / (BOARD_DIMENSION + 1))
+GAP_SIZE = int(TILE_SIZE / BOARD_DIMENSION)
+
+### FONT ###
+FONT_TYPE = "Times New Roman"
+TEXT_SIZE = int(SCREEN_WIDTH / 8)
+
+### GAME ###
+START_TIME = 15000
+
+GAME_COLORS = {
+    "WHITE": (255, 255, 255),
+    "RED": (123, 1, 0),
+    "GREEN": (76, 174, 79),
+    "BLUE": (33, 149, 238),
+    "YELLOW": (255, 235, 61),
+    "ORANGE": (253, 152, 2),
+    "PURPLE": (153, 38, 172),
+    "BLACK": (0, 0, 0),
+    "BACKGROUND": (32, 40, 46),
+    "SQUARE_BACKGROUND": (46, 69, 97),
+    "LIGHT_ORANGE": (244, 169, 107),
+    "DARK_ORANGE": (90, 56, 23),
+}
