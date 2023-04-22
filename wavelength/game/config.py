@@ -1,0 +1,22 @@
+### WINDOW ###
+GAME_TITLE = "Wavelength"
+
+SCREEN_WIDTH = 600
+SCREEN_HEIGHT = 600
+WINDOW_POS_LEFT = 200
+WINDOW_POS_TOP = 200
+
+### GAME ###
+CIRCLE_CENTER = (int(SCREEN_WIDTH / 2), int(SCREEN_HEIGHT / 2))
+CIRCLE_RADIUS = 200
+
+
+GAME_COLORS = {
+    "WHITE": (255, 255, 255),
+    "RED": (123, 1, 0),
+    "BLUE": (33, 149, 238),
+    "YELLOW": (255, 235, 61),
+    "ORANGE": (253, 152, 2),
+    "BLACK": (0, 0, 0),
+    "BACKGROUND": (32, 40, 46),
+}
