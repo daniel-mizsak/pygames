@@ -5,7 +5,6 @@ Unit with randomized attributes.
 """
 
 import random
-from typing import Tuple
 
 import config as cfg
 
@@ -30,11 +29,11 @@ class Unit:
         self.number = number
         self.order = order
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Unit(order={self.order}, background_color={self.background_color})"
 
 
-def create_units(unit_number: int = cfg.UNIT_NUMBER) -> Tuple[Unit]:
+def create_units(unit_number: int = cfg.UNIT_NUMBER) -> tuple[Unit, ...]:
     numbers = [i + 1 for i in range(unit_number)]
     order = random.sample(numbers, len(numbers))
     number = random.sample(numbers, len(numbers))
@@ -43,7 +42,7 @@ def create_units(unit_number: int = cfg.UNIT_NUMBER) -> Tuple[Unit]:
     return units
 
 
-def create_task(units: Tuple[Unit], task_number: int = 2) -> Tuple[str, str]:
+def create_task(units: tuple[Unit], task_number: int = 2) -> tuple[str, str]:
     selected_units = random.sample(units, task_number)
     task_text = "Enter the "
     solution_text = ""
