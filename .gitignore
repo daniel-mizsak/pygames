@@ -1,4 +1,15 @@
+# System
+.DS_Store
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Python
 __pycache__/
 
-.vscode
-.venv/
+# IDE
+.idea/
+.vscode/
